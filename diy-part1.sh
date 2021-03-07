@@ -16,8 +16,8 @@
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 # argon-主题
-rm -rf package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/lean/luci-theme-argon
-git clone https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-app-argon-config
+# rm -rf package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/lean/luci-theme-argon
+# git clone https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-app-argon-config
 # 京东签到
 # git clone https://github.com/jerrykuku/node-request package/node-request
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
@@ -27,5 +27,5 @@ git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverc
 rm -rf package/lean/luci-app-cpufreq && svn co https://github.com/project-openwrt/openwrt/branches/master/package/lean/luci-app-cpufreq package/lean/luci-app-cpufreq
 # git clone https://github.com/281677160/openwrt-package package/luci-app-cpulimit
 # Vssr
-git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
-git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
+# git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
+# git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
