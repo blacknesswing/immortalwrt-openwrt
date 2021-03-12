@@ -23,5 +23,3 @@ sed -i "s,'eth1' 'eth0','eth0' 'eth1',g" target/linux/rockchip/armv8/base-files/
 sed -i 's/KERNEL_PATCHVER=5.4/KERNEL_PATCHVER=5.10/g' target/linux/rockchip/Makefile  #修改内核版本
 # sed -i 's/KERNEL_TESTING_PATCHVER:=5.10/KERNEL_TESTING_PATCHVER:=5.10/g' target/linux/rockchip/Makefile  #修改内核版本
 
-sed -i "/passwd/a\sed -i '/DISTRIB_REVISION/d' /etc/openwrt_release" package/lean/default-settings/files/zzz-default-settings
-sed -i "/passwd/a\echo "DISTRIB_REVISION='|Build by Blacknesswing'" >> /etc/openwrt_release" package/lean/default-settings/files/zzz-default-settings
