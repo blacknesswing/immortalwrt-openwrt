@@ -22,7 +22,7 @@
 # git clone https://github.com/jerrykuku/node-request package/node-request
 # git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
 # 微信推送
-git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan 
+# git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan 
 # luci-app-cpufreq
 # rm -rf package/lean/luci-app-cpufreq && svn co https://github.com/project-openwrt/openwrt/branches/master/package/lean/luci-app-cpufreq package/lean/luci-app-cpufreq
 # git clone https://github.com/281677160/openwrt-package package/luci-app-cpulimit
