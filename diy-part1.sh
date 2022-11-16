@@ -22,8 +22,8 @@ git clone https://github.com/NateLol/luci-app-oled package/luci-app-oled
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 # argon-主题
-# rm -rf package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/lean/luci-theme-argon
-# git clone https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-app-argon-config
+rm -rf package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/lean/luci-theme-argon
+git clone https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-app-argon-config
 # 京东签到
 # git clone https://github.com/jerrykuku/node-request package/node-request
 # git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
