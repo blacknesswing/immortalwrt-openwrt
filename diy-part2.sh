@@ -13,6 +13,8 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 # 修改机器名称
+sed -i 's/ImmortalWrt/OpenWrt-R2s/g' package/base-files/files/bin/config_generate
+# 版本号里显示一个自己的名字（281677160 build $(TZ=UTC-8 date "+%Y.%m.%d") @ 这些都是后增加的）
 sed -i 's,Build by Blacknesswing | g' package/emortal/default-settings/files/99-default-settings-chinese
 
 #SWAP LAN WAN（满足千兆场景，可选
