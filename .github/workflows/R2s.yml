@@ -110,7 +110,7 @@ jobs:
       uses: klever1988/cachewrtbuild@main
       with:
         ccache: 'true'
-        mixkey: ${{ env.DEVICE_ARCH }}
+        mixkey: ${{ env.DEVICE_ARCH }}/openwrt
 
     - name: Load custom feeds
       run: |
