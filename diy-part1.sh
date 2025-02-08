@@ -15,8 +15,12 @@
 #添加订阅源
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+rm -rf package/lean/luci-app-passwall2
+rm -rf package/lean/passwall2
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2 package/custom/luci-app-passwall2
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall-packages package/custom/passwall-packages
+echo "src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main" >> "feeds.conf.default"#oled
 
-#oled
 # git clone https://github.com/NateLol/luci-app-oled package/luci-app-oled
 
 # Add a feed source
