@@ -25,3 +25,14 @@ sed -i "s,'eth1' 'eth0','eth0' 'eth1',g" target/linux/rockchip/armv8/base-files/
 # sed -i 's/KERNEL_PATCHVER=5.4/KERNEL_PATCHVER=5.10/g' target/linux/rockchip/Makefile  #修改内核版本
 # sed -i 's/KERNEL_TESTING_PATCHVER:=5.10/KERNEL_TESTING_PATCHVER:=5.10/g' target/linux/rockchip/Makefile  #修改内核版本
 
+# 将构建日期添加到概览页面
+sed -i "s/%C/($(date +"%Y-%m-%d"))/g" package/base-files/files/usr/lib/os-release
+
+# 修改系统版本（界面显示）
+VERSION_FILE="immortalwrt/version"
+VERSION_TEXT=$(head -n 1 ${VERSION_FILE} | tr -d ' \r\n')
+if [ -n "$VERSION_TEXT" ]; then
+  VERSION_TEXT="Build by Blacknesswing ${VERSION_TEXT}"
+  sed -i "/^VERSION_NUMBER:=.*SNAPSHOT/s/SNAPSHOT/${VERSION_TEXT}/" include/version.mk
+fi
+
