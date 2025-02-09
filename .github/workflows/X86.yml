@@ -20,7 +20,7 @@ env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: openwrt-24.10
   FEEDS_CONF: 24feeds.conf.default
-  CONFIG_FILE: X863.config
+  CONFIG_FILE: X86.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part3.sh
   UPLOAD_BIN_DIR: false
@@ -102,7 +102,6 @@ jobs:
         df -Th
         
 
-
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
@@ -122,7 +121,6 @@ jobs:
         /usr/local/share/powershell /usr/local/share/chromium /usr/local/lib/node_modules
         sudo timedatectl set-timezone "$TZ"
         sudo chown $USER:$GROUPS $GITHUB_WORKSPACE
-
 
 
     - name: Clone source code
