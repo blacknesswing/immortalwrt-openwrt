@@ -27,7 +27,7 @@ sed -i "s,'eth1' 'eth0','eth0' 'eth1',g" target/linux/rockchip/armv8/base-files/
 
 # 将构建日期添加到概览页面
 # sed -i "s/%C/($ |Build by Blacknesswing)/g" package/base-files/files/usr/lib/os-release
-sed -i 's/%D %V/%D %V |Build by Blacknesswing|/g' package/base-files/files/usr/lib/os-release
+sed -i 's/%D %V/%D %V | Build by Blacknesswing |/g' package/base-files/files/usr/lib/os-release
 
 
 
