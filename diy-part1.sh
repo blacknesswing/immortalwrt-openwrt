@@ -19,4 +19,5 @@
 echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >> "feeds.conf.default"
 # echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2" >> "feeds.conf.default"
 
-
+echo "src-git mosdns https://github.com/sbwml/luci-app-mosdns.git;v5 " >> "feeds.conf.default"
+echo "src-git v2ray-geodata https://github.com/sbwml/v2ray-geodata " >> "feeds.conf.default"
