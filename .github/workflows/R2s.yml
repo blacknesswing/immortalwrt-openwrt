@@ -124,18 +124,11 @@ jobs:
         sudo chown $USER:$GROUPS $GITHUB_WORKSPACE
 
 
-
     - name: Clone source code
       working-directory: ./
       run: |
         git clone --depth=1 $REPO_URL -b $REPO_BRANCH openwrt
   
-    - name: Cache
-      uses: klever1988/cachewrtbuild@main
-      with:
-        ccache: 'true'
-        mixkey: ${{ env.DEVICE_ARCH }}
-        prefix: ${{ github.workspace }}/openwrt
 
     - name: Load custom feeds
       run: |
