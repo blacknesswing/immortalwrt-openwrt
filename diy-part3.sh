@@ -14,7 +14,7 @@
  sed -i 's/192.168.1.1/192.168.50.1/g' package/base-files/files/bin/config_generate
 
 # 修改机器名称
-sed -i 's/ImmortalWrt/OpenWrt-X86/g' package/base-files/files/bin/config_generate
+ sed -i 's/ImmortalWrt/OpenWrt-X86/g' package/base-files/files/bin/config_generate
 
 # 将构建日期添加到概览页面
  sed -i 's/%D %V/%D %V | Build by Blacknesswing |/g' package/base-files/files/usr/lib/os-release
