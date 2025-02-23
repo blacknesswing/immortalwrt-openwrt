@@ -19,8 +19,8 @@ on:
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: master
-  FEEDS_CONF: testfeeds.conf.default
-  CONFIG_FILE: R2stest.config
+  FEEDS_CONF: masterfeeds.conf.default
+  CONFIG_FILE: R2smaster.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
@@ -195,7 +195,7 @@ jobs:
       uses: actions/upload-artifact@main
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: immortalwrt_R2sTest${{ env.FILE_DATE }}
+        name: immortalwrt_R2sMaster${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
 
     - name: Generate release tag
