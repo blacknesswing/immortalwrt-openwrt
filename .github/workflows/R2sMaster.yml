@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: R2sTest OpenWrt
+name: R2sMaster OpenWrt
 
 on:
   repository_dispatch:
