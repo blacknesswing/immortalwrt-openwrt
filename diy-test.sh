@@ -21,4 +21,4 @@ echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >>
 
 # mosdns
 echo "src-git mosdns https://github.com/sbwml/luci-app-mosdns.git;v5 " >> "testfeeds.conf.default"
-echo "src-git v2ray-geodata https://github.com/sbwml/v2ray-geodata " >> "testfeeds.conf.default"
+
