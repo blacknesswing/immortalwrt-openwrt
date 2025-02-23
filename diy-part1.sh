@@ -20,5 +20,5 @@
 echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >> "feeds.conf.default"
 
 # mosdns
-echo "src-git mosdns https://github.com/sbwml/luci-app-mosdns.git;v5 " >> "feeds.conf.default"
+echo "src-git mosdns https://github.com/sbwml/luci-app-mosdns.git;v5" >> "feeds.conf.default"
 
