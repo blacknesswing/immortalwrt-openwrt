@@ -14,7 +14,7 @@ name: X86Master OpenWrt
 
 on:
   repository_dispatch:
-  workflow_dispatch:
+  workflow_dispatch: master
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
