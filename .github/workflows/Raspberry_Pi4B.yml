@@ -195,7 +195,7 @@ jobs:
       uses: actions/upload-artifact@main
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: immortalwrt_Raspberry_Pi4B_Master${{ env.FILE_DATE }}
+        name: immortalwrt_Raspberry_Pi4B${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
 
     - name: Generate release tag
