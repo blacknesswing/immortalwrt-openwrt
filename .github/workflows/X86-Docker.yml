@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: X86 OpenWrt
+name: X86-Docker OpenWrt
 
 on:
   repository_dispatch:
@@ -20,7 +20,7 @@ env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: openwrt-24.10
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: X86.config
+  CONFIG_FILE: X86-docker.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part3.sh
   UPLOAD_BIN_DIR: false
@@ -195,7 +195,7 @@ jobs:
       uses: actions/upload-artifact@main
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: immortalwrt_X86${{ env.FILE_DATE }}
+        name: immortalwrt_X86-docker${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
 
     - name: Generate release tag
